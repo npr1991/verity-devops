@@ -63,7 +63,10 @@ pipeline {
             }
         }
 		//Code ends for stage Unit Test
-/Code starts for stage JaCoCo
+		
+		
+		
+		//Code starts for stage JaCoCo
 		stage('JaCoCo') {
             steps {
                 sh 'mvn jacoco:report'
@@ -112,7 +115,7 @@ pipeline {
             }
         }
 		//Code ends for stage System Test
-	
+		
 		// *****ALL CODE TO BE ADDED ABOVE THIS COMMENT*****
     }
 }
